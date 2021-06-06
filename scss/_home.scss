@@ -1,0 +1,18 @@
+.name-section {
+  @include flex-center;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 0;
+  .firstname {
+    font-weight: 300;
+  }
+
+  .surname {
+    padding-left: 1rem;
+    color: $secondary-color;
+  }
+}
+
+.description {
+  font-weight: 400;
+}
