@@ -1,6 +1,7 @@
 @include media-md {
   nav {
     visibility: visible !important;
+    display: flex;
   }
   .menu-button {
     visibility: hidden;
