@@ -27,6 +27,13 @@
       }
     }
   }
+
+  .about-text-section {
+    .about-me {
+      font-size: 3rem;
+    }
+  }
+
   .menu-button {
     visibility: hidden;
   }
@@ -38,7 +45,6 @@
   header {
     height: 6rem;
   }
-
   .projects-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
