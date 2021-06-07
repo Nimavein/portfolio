@@ -14,7 +14,7 @@
         display: inline-block;
         padding-right: 2rem;
         font-size: 1.5rem;
-        font-weight: 300;
+        font-weight: 350;
         text-transform: uppercase;
         letter-spacing: 2px;
 
@@ -28,10 +28,31 @@
     }
   }
 
+  .more-about-button {
+    width: 30% !important;
+  }
+
+  .download-cv-button {
+    width: 30% !important;
+  }
+
   .about-text-section {
+    margin-left: 5rem;
+
     .about-me {
       font-size: 3rem;
     }
+  }
+
+  .home-text-section {
+    margin-left: 10rem;
+    .name {
+      font-size: 3rem;
+    }
+  }
+
+  .home-buttons {
+    display: block;
   }
 
   .menu-button {

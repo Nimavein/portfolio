@@ -122,38 +122,6 @@ body {
   color: #8c2f5b;
 }
 
-.name-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 2rem;
-  line-height: 2rem;
-  margin-bottom: 0;
-}
-
-.name-section .firstname {
-  font-weight: 300;
-}
-
-.name-section .surname {
-  padding-left: 1rem;
-  color: #8c2f5b;
-}
-
-.description {
-  font-weight: 400;
-}
-
-.fab {
-  padding: 0 0.5rem 0 0.5rem;
-}
-
 header {
   background: #272727;
   height: 3rem;
@@ -245,13 +213,13 @@ footer {
   padding: 0 2rem 0 1rem;
 }
 
-.projects-content {
+.about-content {
   background: #272727;
 }
 
 .about-text-section {
   padding-top: 35vh;
-  margin-left: 5rem;
+  margin-left: 3rem;
   text-align: left;
   width: 50%;
   position: relative;
@@ -268,8 +236,8 @@ footer {
 }
 
 .about-text-section .about-me {
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,6 +250,65 @@ footer {
 
 .about-text-section .about-me-info {
   margin-top: 0;
+}
+
+.home-text-section {
+  padding-top: 35vh;
+  margin-left: 3rem;
+  text-align: left;
+  width: 50%;
+  position: relative;
+}
+
+.home-text-section .name {
+  font-size: 2rem;
+  line-height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-text-section .name .firstname {
+  margin: 0;
+}
+
+.home-text-section .name .surname {
+  color: #8c2f5b;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.welcome {
+  font-weight: 300;
+}
+
+.description {
+  font-weight: 300;
+}
+
+.home-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-buttons .more-about-button {
+  width: 80vw;
+  background: white !important;
+  color: #8c2f5b !important;
+  margin-bottom: 10px !important;
+}
+
+.home-buttons .download-cv-button {
+  width: 80vw;
+}
+
+.fab {
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -301,7 +328,7 @@ footer {
     display: inline-block;
     padding-right: 2rem;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 350;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
@@ -312,8 +339,26 @@ footer {
   .navbar .navbar-menu .navbar-item .navbar-link:hover {
     color: #8c2f5b;
   }
+  .more-about-button {
+    width: 30% !important;
+  }
+  .download-cv-button {
+    width: 30% !important;
+  }
+  .about-text-section {
+    margin-left: 5rem;
+  }
   .about-text-section .about-me {
     font-size: 3rem;
+  }
+  .home-text-section {
+    margin-left: 10rem;
+  }
+  .home-text-section .name {
+    font-size: 3rem;
+  }
+  .home-buttons {
+    display: block;
   }
   .menu-button {
     visibility: hidden;
