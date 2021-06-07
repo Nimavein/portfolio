@@ -30,6 +30,22 @@
   .menu-button {
     visibility: hidden;
   }
+
+  footer {
+    padding: 0 1rem 0 1rem;
+  }
+
+  header {
+    height: 6rem;
+  }
+
+  .projects-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .project-card {
+      justify-self: center;
+    }
+  }
 }
 
 @include media-lg {

@@ -1,0 +1,28 @@
+header {
+  background: $primary-color;
+  height: 3rem;
+}
+
+footer {
+  padding: 0 2rem 0 1rem;
+}
+
+.projects-content {
+  background: $primary-color;
+}
+
+.projects-cards {
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  .project-card {
+    background: white;
+    color: $primary-color;
+    width: 80%;
+    height: 40vh;
+    margin-bottom: 1rem;
+  }
+}
