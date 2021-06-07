@@ -256,7 +256,7 @@ footer {
   padding-top: 35vh;
   margin-left: 3rem;
   text-align: left;
-  width: 50%;
+  width: 60%;
   position: relative;
 }
 
@@ -353,6 +353,7 @@ footer {
   }
   .home-text-section {
     margin-left: 10rem;
+    width: 50%;
   }
   .home-text-section .name {
     font-size: 3rem;
