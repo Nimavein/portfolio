@@ -1,3 +1,11 @@
+@mixin project-button-size {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
 header {
   background: $primary-color;
   height: 3rem;
@@ -12,17 +20,42 @@ footer {
 }
 
 .projects-cards {
-  display: flex;
+  @include flex-center;
   flex-flow: column wrap;
-  padding-top: 5rem;
-  justify-content: center;
-  align-items: center;
+  padding-top: 7rem;
   z-index: -1;
   .project-card {
+    display: flex;
+    flex-direction: column;
     background: white;
     color: $primary-color;
     width: 80%;
     height: 40vh;
     margin-bottom: 1rem;
+    border-bottom: 5px solid $secondary-color;
+    @include transition-ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .last-project {
+    margin-bottom: 5rem;
+  }
+}
+
+.card-buttons {
+  margin-top: auto;
+
+  .preview-button {
+    @include project-button-size;
+    background: $primary-color;
+    color: white;
+  }
+
+  .code-button {
+    @include project-button-size;
+    background: $secondary-color;
+    color: white;
   }
 }

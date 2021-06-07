@@ -119,7 +119,7 @@ body {
 }
 
 .navbar .navbar-menu .navbar-item .navbar-link:hover {
-  color: #ff652f;
+  color: #8c2f5b;
 }
 
 .name-section {
@@ -143,7 +143,7 @@ body {
 
 .name-section .surname {
   padding-left: 1rem;
-  color: #ff652f;
+  color: #8c2f5b;
 }
 
 .description {
@@ -171,26 +171,69 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  padding-top: 5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding-top: 7rem;
   z-index: -1;
 }
 
 .projects-cards .project-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: white;
   color: #272727;
   width: 80%;
   height: 40vh;
   margin-bottom: 1rem;
+  border-bottom: 5px solid #8c2f5b;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects-cards .project-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.projects-cards .last-project {
+  margin-bottom: 5rem;
+}
+
+.card-buttons {
+  margin-top: auto;
+}
+
+.card-buttons .preview-button {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  background: #272727;
+  color: white;
+}
+
+.card-buttons .code-button {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  background: #8c2f5b;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -219,7 +262,7 @@ footer {
     transition: all 0.5s ease-in-out;
   }
   .navbar .navbar-menu .navbar-item .navbar-link:hover {
-    color: #ff652f;
+    color: #8c2f5b;
   }
   .menu-button {
     visibility: hidden;
@@ -239,6 +282,9 @@ footer {
   .projects-cards .project-card {
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+  .projects-cards .last-project {
+    margin-bottom: 0;
   }
 }
 
@@ -304,6 +350,6 @@ header {
 }
 
 .active {
-  color: #ff652f;
+  color: #8c2f5b;
 }
 /*# sourceMappingURL=main.css.map */
