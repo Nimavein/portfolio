@@ -1,0 +1,19 @@
+.phone-section,
+.address-section,
+.email-section {
+  display: flex;
+  align-items: center;
+}
+
+.phone-title,
+.address-title,
+.email-title {
+  padding-left: 12px;
+}
+
+.email,
+.phone,
+.address {
+  color: $secondary-color;
+  margin-top: -8px;
+}

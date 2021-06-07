@@ -301,6 +301,7 @@ footer {
   background: white !important;
   color: #8c2f5b !important;
   margin-bottom: 10px !important;
+  font-weight: 600;
 }
 
 .home-buttons .download-cv-button {
@@ -309,6 +310,30 @@ footer {
 
 .fab {
   padding: 0 0.5rem 0 0.5rem;
+}
+
+.phone-section,
+.address-section,
+.email-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone-title,
+.address-title,
+.email-title {
+  padding-left: 12px;
+}
+
+.email,
+.phone,
+.address {
+  color: #8c2f5b;
+  margin-top: -8px;
 }
 
 @media screen and (min-width: 768px) {
