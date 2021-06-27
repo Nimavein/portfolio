@@ -28,6 +28,10 @@
     }
   }
 
+  .card-buttons {
+    visibility: hidden;
+  }
+
   .more-about-button {
     width: 30% !important;
   }
@@ -47,6 +51,7 @@
   .home-text-section {
     margin-left: 10rem;
     width: 50%;
+    padding-top: 35vh;
     .name {
       font-size: 3rem;
     }
@@ -72,6 +77,25 @@
     grid-template-columns: 1fr 1fr;
     .project-card {
       justify-self: center;
+      &:hover {
+        transform: scale(1.05);
+      }
+      &:hover {
+        .card-buttons {
+          display: initial;
+          visibility: visible;
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          .preview-button,
+          .code-button {
+            width: 40%;
+          }
+          .preview-button {
+            background-color: $primary-color;
+          }
+        }
+      }
     }
     .last-project {
       margin-bottom: 0;
@@ -83,4 +107,7 @@
 }
 
 @include media-xl {
+  .project-card {
+    height: 45vh !important;
+  }
 }

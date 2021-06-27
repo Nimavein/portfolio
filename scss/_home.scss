@@ -1,15 +1,13 @@
 .home-text-section {
-  padding-top: 35vh;
-  margin-left: 3rem;
+  padding-top: 20vh;
+  margin-left: 2rem;
   text-align: left;
   width: 60%;
   position: relative;
 
-  &::before {
-  }
   .name {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
     display: flex;
 
     .firstname {

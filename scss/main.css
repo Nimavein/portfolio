@@ -164,16 +164,16 @@ footer {
   background: white;
   color: #272727;
   width: 80%;
-  height: 40vh;
-  margin-bottom: 1rem;
+  height: 30vh;
+  margin-bottom: 3rem;
   border-bottom: 5px solid #8c2f5b;
+  margin-bottom: 130px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.projects-cards .project-card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.projects-cards .project-card .todo-project-image {
+  height: 85%;
 }
 
 .projects-cards .last-project {
@@ -181,7 +181,15 @@ footer {
 }
 
 .card-buttons {
-  margin-top: auto;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 .card-buttons .preview-button {
@@ -192,6 +200,9 @@ footer {
   cursor: pointer;
   background: #272727;
   color: white;
+  margin-bottom: 0 !important;
+  width: 100%;
+  background-color: black;
 }
 
 .card-buttons .code-button {
@@ -202,6 +213,7 @@ footer {
   cursor: pointer;
   background: #8c2f5b;
   color: white;
+  width: 100%;
 }
 
 header {
@@ -253,16 +265,16 @@ footer {
 }
 
 .home-text-section {
-  padding-top: 35vh;
-  margin-left: 3rem;
+  padding-top: 20vh;
+  margin-left: 2rem;
   text-align: left;
   width: 60%;
   position: relative;
 }
 
 .home-text-section .name {
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,6 +376,9 @@ footer {
   .navbar .navbar-menu .navbar-item .navbar-link:hover {
     color: #8c2f5b;
   }
+  .card-buttons {
+    visibility: hidden;
+  }
   .more-about-button {
     width: 30% !important;
   }
@@ -379,6 +394,7 @@ footer {
   .home-text-section {
     margin-left: 10rem;
     width: 50%;
+    padding-top: 35vh;
   }
   .home-text-section .name {
     font-size: 3rem;
@@ -405,8 +421,32 @@ footer {
     -ms-grid-column-align: center;
         justify-self: center;
   }
+  .projects-cards .project-card:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .projects-cards .project-card:hover .card-buttons {
+    display: initial;
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .projects-cards .project-card:hover .card-buttons .preview-button,
+  .projects-cards .project-card:hover .card-buttons .code-button {
+    width: 40%;
+  }
+  .projects-cards .project-card:hover .card-buttons .preview-button {
+    background-color: #272727;
+  }
   .projects-cards .last-project {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .project-card {
+    height: 45vh !important;
   }
 }
 
