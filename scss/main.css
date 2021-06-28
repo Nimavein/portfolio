@@ -177,7 +177,7 @@ footer {
 }
 
 .projects-cards .last-project {
-  margin-bottom: 5rem;
+  margin-bottom: 12rem;
 }
 
 .card-buttons {
@@ -316,6 +316,10 @@ footer {
   font-weight: 600;
 }
 
+.home-buttons .visible {
+  visibility: visible !important;
+}
+
 .home-buttons .download-cv-button {
   width: 80vw;
 }
@@ -439,8 +443,11 @@ footer {
   .projects-cards .project-card:hover .card-buttons .preview-button {
     background-color: #272727;
   }
+  .projects-cards .project-margin {
+    margin-bottom: 5rem;
+  }
   .projects-cards .last-project {
-    margin-bottom: 0;
+    margin-bottom: 5rem;
   }
 }
 
