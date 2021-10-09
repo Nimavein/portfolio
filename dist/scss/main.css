@@ -165,9 +165,8 @@ footer {
   color: #272727;
   width: 80%;
   height: 30vh;
-  margin-bottom: 3rem;
   border-bottom: 5px solid #8c2f5b;
-  margin-bottom: 130px;
+  margin-bottom: 60px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -442,9 +441,6 @@ footer {
   }
   .projects-cards .project-card:hover .card-buttons .preview-button {
     background-color: #272727;
-  }
-  .projects-cards .project-margin {
-    margin-bottom: 5rem;
   }
   .projects-cards .last-project {
     margin-bottom: 5rem;
