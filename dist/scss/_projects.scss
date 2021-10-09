@@ -31,9 +31,8 @@ footer {
     color: $primary-color;
     width: 80%;
     height: 30vh;
-    margin-bottom: 3rem;
     border-bottom: 5px solid $secondary-color;
-    margin-bottom: 130px;
+    margin-bottom: 60px;
     @include transition-ease;
 
     .todo-project-image {
