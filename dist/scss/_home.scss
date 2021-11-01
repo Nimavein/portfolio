@@ -1,9 +1,8 @@
 .home-text-section {
-  padding-top: 20vh;
-  margin-left: 2rem;
-  text-align: left;
-  width: 60%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20vh 20px 0 20px;
+  align-items: center;
 
   .name {
     font-size: 1.8rem;

@@ -73,6 +73,7 @@
     transform: translateY(-100%);
     @include transition-ease;
     &.open {
+      padding: 0;
       transform: translateY(0);
     }
     .navbar-item {

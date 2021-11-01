@@ -107,6 +107,7 @@ body {
 }
 
 .navbar .navbar-menu.open {
+  padding: 0;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -229,17 +230,16 @@ footer {
 }
 
 .about-text-section {
-  padding-top: 35vh;
-  margin-left: 3rem;
+  padding-top: 20vh;
+  padding: 15vh 20px 0 20px;
   text-align: left;
-  width: 50%;
   position: relative;
 }
 
 .about-text-section::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 20px;
   bottom: -2rem;
   height: 1px;
   width: 70%;
@@ -264,11 +264,17 @@ footer {
 }
 
 .home-text-section {
-  padding-top: 20vh;
-  margin-left: 2rem;
-  text-align: left;
-  width: 60%;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20vh 20px 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home-text-section .name {
@@ -389,15 +395,26 @@ footer {
     width: 30% !important;
   }
   .about-text-section {
+    padding-top: 30vh;
     margin-left: 5rem;
+  }
+  .about-text-section::before {
+    width: 45%;
   }
   .about-text-section .about-me {
     font-size: 3rem;
+  }
+  .about-text-section .about-me-info {
+    width: 50%;
   }
   .home-text-section {
     margin-left: 10rem;
     width: 50%;
     padding-top: 35vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
   }
   .home-text-section .name {
     font-size: 3rem;

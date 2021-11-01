@@ -41,10 +41,17 @@
   }
 
   .about-text-section {
+    padding-top: 30vh;
     margin-left: 5rem;
 
+    &::before {
+      width: 45%;
+    }
     .about-me {
       font-size: 3rem;
+    }
+    .about-me-info {
+      width: 50%;
     }
   }
 
@@ -52,6 +59,8 @@
     margin-left: 10rem;
     width: 50%;
     padding-top: 35vh;
+    align-items: flex-start;
+    text-align: left;
     .name {
       font-size: 3rem;
     }
