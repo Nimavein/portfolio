@@ -78,36 +78,45 @@
     padding: 0 1rem 0 1rem;
   }
 
-  header {
-    height: 6rem;
-  }
-  .projects-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    .project-card {
-      justify-self: center;
-      &:hover {
-        transform: scale(1.05);
+  .projects-content {
+    margin-top: 30px;
+
+    .projects-cards {
+      flex-flow: wrap;
+      padding-bottom: 100px;
+      align-items: flex-start;
+
+      .last-project {
+        margin-bottom: 0;
       }
-      &:hover {
+
+      .project-card {
+        width: 45%;
+        justify-self: center;
+        border-radius: 12px;
         .card-buttons {
-          display: initial;
-          visibility: visible;
-          position: absolute;
-          width: 100%;
-          bottom: 0;
-          .preview-button,
-          .code-button {
-            width: 40%;
-          }
-          .preview-button {
-            background-color: $primary-color;
+          display: none;
+        }
+        &:hover {
+          transform: scale(1.05);
+        }
+        &:hover {
+          .card-buttons {
+            display: initial;
+            visibility: visible;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            .preview-button,
+            .code-button {
+              width: 40%;
+            }
+            .preview-button {
+              background-color: $primary-color;
+            }
           }
         }
       }
-    }
-    .last-project {
-      margin-bottom: 5rem;
     }
   }
 }
@@ -117,6 +126,5 @@
 
 @include media-xl {
   .project-card {
-    height: 45vh !important;
   }
 }

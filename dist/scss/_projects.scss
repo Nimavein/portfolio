@@ -6,46 +6,40 @@
   cursor: pointer;
 }
 
-header {
-  background: $primary-color;
-  height: 3rem;
-}
-
 footer {
   padding: 0 2rem 0 1rem;
 }
 
 .projects-content {
   background: $primary-color;
+  padding: 5rem 20px 0 16px;
 }
 
 .projects-cards {
   @include flex-center;
-  flex-flow: column wrap;
-  padding-top: 7rem;
-  z-index: -1;
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  flex-direction: column;
   .project-card {
     display: flex;
     flex-direction: column;
-    background: white;
     color: $primary-color;
-    width: 80%;
-    height: 30vh;
     border-bottom: 5px solid $secondary-color;
-    margin-bottom: 140px;
+    margin-bottom: 20px;
     @include transition-ease;
 
     .todo-project-image {
-      height: 85%;
+      max-width: 100%;
+      border-radius: 10px 10px 0 0;
     }
   }
   .last-project {
-    margin-bottom: 12rem;
+    margin-bottom: 5rem;
   }
 }
 
 .card-buttons {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   width: 100%;
