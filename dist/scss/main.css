@@ -379,6 +379,9 @@ footer {
   .navbar .navbar-menu .navbar-item .navbar-link:hover {
     color: #8c2f5b;
   }
+  header {
+    height: 6rem !important;
+  }
   .card-buttons {
     visibility: hidden;
   }
@@ -526,7 +529,7 @@ header {
   z-index: 2;
   width: 100%;
   top: 0;
-  height: 6rem;
+  height: 3rem;
 }
 
 .active {
