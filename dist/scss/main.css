@@ -440,7 +440,9 @@ footer {
     width: 45%;
     -ms-grid-column-align: center;
         justify-self: center;
-    border-radius: 12px;
+  }
+  .projects-content .projects-cards .project-card .todo-project-image {
+    border-radius: 0;
   }
   .projects-content .projects-cards .project-card .card-buttons {
     display: none;

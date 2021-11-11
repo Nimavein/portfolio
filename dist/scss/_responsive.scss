@@ -93,7 +93,10 @@
       .project-card {
         width: 45%;
         justify-self: center;
-        border-radius: 12px;
+
+        .todo-project-image {
+          border-radius: 0;
+        }
         .card-buttons {
           display: none;
         }
